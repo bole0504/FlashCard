@@ -1,0 +1,32 @@
+---
+description: Learn English project context - đọc trước khi làm việc với project
+alwaysApply: true
+---
+
+# Learn English - Project Context
+
+## Project
+- **Mục đích**: Website tự học tiếng Anh cá nhân
+- **Mục tiêu**: Ghi từ vựng (kèm ảnh flashcard), viết câu với từ mới
+- **Scope**: Ứng dụng cá nhân, cấu trúc đơn giản
+
+## Tech Stack
+- **BE**: Node.js, Express, MongoDB, Mongoose, JWT, Multer
+- **FE** (kế hoạch): React, Vite, MUI, TanStack Query, Axios
+
+## Cấu trúc
+- `backend/` - API (src/config, models, middleware, controllers, routes)
+- `frontend/` - Chưa tạo
+
+## Models
+- **User**: name, email, password(hashed)
+- **Vocabulary**: userId, word, meaning, pronunciation, example, image, tags
+
+## API
+- Auth: POST `/api/auth/register`, `/api/auth/login`
+- Vocabulary: CRUD tại `/api/vocabulary` (cần Bearer token)
+- Upload ảnh: form-data field `image`, lưu tại `/uploads/`
+
+## Conventions
+- ES modules, REST API, JWT auth
+- Khi thêm tính năng: giữ pattern controller → route → middleware
